@@ -108,10 +108,6 @@ This is a cog. Rather, the `Default` class in this file is a subclass of the abs
 
 `ping()` - You should be able to figure this one out. It's basically the same as `hello()`, but it sends the network latency the bot is experiencing with Discord's servers.
 
-### Cogs/**init**.py
-
-This is another instance of Python magic, so don't worry if you don't understand it. Basically, it makes the `Cogs/` directory into a Python module, which allows us to import all the files contained in one line. If you want to add a new cog in the future, put it in `Cogs/` and add `from Cogs.FILENAME import CLASSNAME` to this file.
-
 ## Conclusion/notes
 
 That's it! That's all there is to making a simple Discord bot. Now it's on you to add more commands and events and make it do all sorts of fun things.
