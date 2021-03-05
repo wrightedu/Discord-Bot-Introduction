@@ -2,6 +2,10 @@
 from discord.ext import commands
 
 
+def setup(bot):
+    bot.add_cog(Default(bot))
+
+
 class Default(commands.Cog):
     def __init__(self, bot):
         self.bot = bot

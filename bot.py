@@ -20,7 +20,7 @@ async def on_ready():
 
 if __name__ == '__main__':
     print('Starting bot')
-    for file in listdir('Cogs'):
+    for file in os.listdir('Cogs'):
         if not file.startswith('__') and file.endswith('.py'):
-            bot.add_cog(globals()[file[:-3]](bot))
+            bot.load_extension(f'Cogs.{file[:-3]}')
     bot.run(TOKEN)
