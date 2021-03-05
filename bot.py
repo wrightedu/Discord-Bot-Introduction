@@ -22,5 +22,8 @@ if __name__ == '__main__':
     print('Starting bot')
     for file in os.listdir('Cogs'):
         if not file.startswith('__') and file.endswith('.py'):
-            bot.load_extension(f'Cogs.{file[:-3]}')
+            try:
+                bot.load_extension(f'Cogs.{file[:-3]}')
+            except commands.errors.NoEntryPointError:
+                pass
     bot.run(TOKEN)
