@@ -64,7 +64,7 @@ Open the link generated at the bottom of the `SCOPES` section in a new tab. Clic
 
 Firstly, clone this repository (if you haven't already).
 
-You'll need to install the [discord.py Python module](https://pypi.org/project/discord.py/). Run `pip install discord.py`.
+You'll need to install the [discord.py Python module](https://pypi.org/project/discord.py/) and [dotenv](https://pypi.org/project/python-dotenv/). Run `pip install discord.py dotenv`.
 
 Next, you'll need to get the bot's token. This is used to tell Discord which bot should be run off the code. Go back to the `Bot` page, and copy your token.
 
